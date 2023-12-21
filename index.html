@@ -9,14 +9,16 @@
 
 <body>
 <div class="tabs">
-  <ul class="tabs__wrapper">
-    <li class="tabs__tab tabs__tab_active" id="tab1">React</li>
-    <li class="tabs__tab" id="tab2">Vue</li>
-    <li class="tabs__tab" id="tab3">Angular</li>
-  </ul>
-  <div class="tabs__content">
-    React — це JavaScript бібліотека для створення інтерфейсів
-  </div>
+  <nav class="tabs__wrapper" role="tablist" aria-label="Tabs">
+    <a class="tabs__tab tabs__tab_active" id="tab1" role="tab" aria-selected="true" tabindex="0">React</a>
+    <a class="tabs__tab" id="tab2" role="tab" aria-selected="true" tabindex="-1">Vue</a>
+    <a class="tabs__tab" id="tab3" role="tab" aria-selected="true" tabindex="-1">Angular</a>
+  </nav>
+  <article class="tabs__content" role="main">
+    <section role="tabpanel" tabindex="0">
+      React — це JavaScript бібліотека для створення інтерфейсів
+    </section>
+  </article>
 </div>
 <script src="index.js" type="module"></script>
 </body>
